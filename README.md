@@ -14,7 +14,8 @@ git clone with Master Branch
 Php artisan key:generate
 Php artisan serve 
 Api : http://127.0.0.1:8000/api/paytool Serve at this  <br/>
-https://github.com/syedfahad1122/toolTaxService/blob/master/TestResults/TestResult.PNG
+<img src ="https://github.com/syedfahad1122/toolTaxService/blob/master/TestResults/TestResult.PNG" />
+
 <br/>
 Thanks 
 Regards 
