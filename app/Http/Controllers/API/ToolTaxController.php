@@ -16,9 +16,10 @@ class ToolTaxController extends Controller
     {
         $validator = Validator::make($request->post(),[
             'number_plate' => 'required|regex:/[A-Z]{1,3}-[0-9]{1,3}/',
-            'interchange' => 'required|numeric|regex:/[0-4]{1}/',
+            'interchange' => 'required|numeric|regex:/[0-6]{1}/',
            'request_date' => 'required|date_format:Y-m-d' 
         ]);
+        
         if($validator->fails()){
             return response()->json($validator->errors());       
         }
