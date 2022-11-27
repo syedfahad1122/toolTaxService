@@ -23,7 +23,6 @@ class ToolTaxController extends Controller
             return response()->json($validator->errors());       
         }
          return response()->json(["data" => $toolTaxService->calToolTax($request->post())], 200);
-
     }
 
     

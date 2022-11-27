@@ -1,0 +1,59 @@
+{
+	"info": {
+		"_postman_id": "d6a40563-6b2e-4dbd-95f3-234fcbabd461",
+		"name": "ToolTax",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:8000/api/exit",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "number_plate",
+							"value": "LOL-122",
+							"type": "default"
+						},
+						{
+							"key": "interchange",
+							"value": "4",
+							"type": "default"
+						},
+						{
+							"key": "request_date",
+							"value": "2017-09-13",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/exit",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"exit"
+					],
+					"query": [
+						{
+							"key": "number_plate",
+							"value": "1232-123",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

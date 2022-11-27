@@ -16,7 +16,7 @@ use App\Http\Controllers\API\ToolTaxController;
 */
 
 
-Route::post('/exit', [ToolTaxController::class,'toolTaxExitSurcharge']);
+Route::post('/paytool', [ToolTaxController::class,'toolTaxExitSurcharge']);
 
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
