@@ -45,7 +45,7 @@ class ToolTaxCalService implements ToolTaxCalServiceInterface
         $this->applyDiscount();
         $tootTaxExitPayload = [
             "baseRate" => $this->baseRate,
-            "discount_breakDown" => $this->discountApply,
+            "discount_breakDown" => $this->discountApply ?? "N/A",
             "SubTotal" => $this->subTotal,
             "Discount_Other" => $this->discPerc,
             "total_surcharge" => $this->total
@@ -91,7 +91,7 @@ class ToolTaxCalService implements ToolTaxCalServiceInterface
     /**
      * @param Boolean return Type of surcharge added or not
      */
-    
+
     public function addSurcharge()
     {
         if(in_array($this->currentDay,["Saturday","Sunday"])){
